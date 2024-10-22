@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Inside Content</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #524F4F;
+        }
+        .content {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            max-width: 80%;
+            height: 1000px;
+            width: 1000px;
+        }
+        .content video {
+            width: 100%; /* Adjust to fit the container */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- Content containing the video -->
+    <div class="content">
+        <!-- Video element inside the content div -->
+        <video autoplay muted loop playsinline>
+            <source src="bg_video_mail_b.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <!-- Text below the video -->
+        <p>Your content here</p>
+    </div>
+</body>
+</html>
